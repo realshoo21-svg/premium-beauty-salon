@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — Premium Beauty Salon</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="index.html">Premium Beauty Salon</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav" id="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="packages.html" class="nav-link">Packages</a>
+        <a href="offers.html" class="nav-link">Offers</a>
+        <a href="team.html" class="nav-link">Team</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <h1 class="reveal-up">Contact Us</h1>
+    <div class="contact-grid reveal-grid">
+      <div>
+        <h3>Location</h3>
+        <p>Tehsil Shah Alam Pul,<br>Peshawar,<br>Khyber Pakhtunkhwa, Pakistan</p>
+        <h3>Phone</h3>
+        <p class="phone">+92 300 0000000</p>
+        <h3>WhatsApp</h3>
+        <p class="whatsapp">+92 300 0000000</p>
+        <h3>Email</h3>
+        <p><a href="mailto:info@example.com">info@example.com</a></p>
+        <h3>Working Hours</h3>
+        <p>Mon–Sat: 10:00 – 19:00</p>
+      </div>
+
+      <div>
+        <h3>Send a message</h3>
+        <form id="contact-form">
+          <label>Name<input name="name" required></label>
+          <label>Email<input name="email" type="email" required></label>
+          <label>Phone<input name="phone" required></label>
+          <label>Message<textarea name="message" required></textarea></label>
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="map reveal-up delay-1">
+      <img src="assets/image/contect.jpg.png" alt="Map placeholder">
+      <p><a href="https://www.google.com/maps/search/?api=1&query=Tehsil+Shah+Alam+Pul+Peshawar" target="_blank">Open in Google Maps</a></p>
+    </div>
+  </main>
+
+  <div id="appointment-modal" class="modal" aria-hidden="true">
+    <div class="modal-inner">
+      <button class="modal-close">✕</button>
+      <h2>Book Appointment</h2>
+      <form id="appointment-form">
+        <label>Name<input name="name" required></label>
+        <label>Email<input name="email" type="email" required></label>
+        <label>Phone<input name="phone" required></label>
+        <label>Service<select name="service"><option>Bridal Glow Package</option><option>Party Glam Package</option><option>Self Care Package</option></select></label>
+        <label>Date<input name="date" type="date" required></label>
+        <label>Time<input name="time" type="time" required></label>
+        <label>Guests<input name="guests" type="number" min="1" value="1"></label>
+        <button class="btn primary" type="submit">Confirm Appointment</button>
+      </form>
+      <div id="appointment-confirm" class="hidden">
+        <p>Thank you — your appointment request was received.</p>
+        <button id="confirm-whatsapp" class="btn">Send Confirmation via WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <button id="whatsapp-fab" aria-label="WhatsApp">💬</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
